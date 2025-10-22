@@ -1,9 +1,15 @@
 import './App.css'
 import FruitsList from './commonents/FruitsList';
 import FruitsList2 from './commonents/FruitsList2';
+import Book from './test/Book';
 import Test1 from './test/Test1';
 import Test2 from './test/Test2';
 import Test3 from './test/Test3';
+import DarkMode from './useStateTest/DarkMode';
+import LikeButton from './useStateTest/LikeButton';
+import NameChange from './useStateTest/NameChange';
+import UseStateEx1 from "./useStateTest/UseStateEx1";
+import UseStateEx2 from "./useStateTest/UseStateEx2";
 
 function App() {
 
@@ -26,10 +32,6 @@ function App() {
     price: 3000
   }
 
-  let test2Book = {
-    title: "책 제목",
-    author: "저자 이름"
-  }
 
   let test3Item1 ={
     name: '바닐라 라떼',
@@ -54,12 +56,25 @@ function App() {
       <Test1 product={test1Product}/>
       <hr />
 
-      <Test2 book={test2Book}/>
+      <Test2 name="책 이름" author="저자 이름" price={3900}/>
+      <Test2 name ="어린왕자" author="생떽쥐페리"/>
       <hr />
 
       <Test3 items={test3Item1}/>
       <Test3 items={test3Item2}/>
       <hr />
+
+      <Book title="책 제목" author="김코딩"/>
+      <Book title="책 제목"/>
+      <hr />
+
+      {/* useState() 학습 */}
+      <UseStateEx1 />
+      <UseStateEx2 />
+      <LikeButton />
+      <NameChange />
+      <DarkMode />
+
 
     </>
   )
