@@ -1,0 +1,22 @@
+/* index.html 에 있는 전체를 둘러싼 #root div */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* App.jsx에 있는 .major class */
+.major-parent{
+  display: flex;
+  gap:0.5rem;
+}
+
+.major{
+  border:1px solid #000;
+  padding:1rem;
+  background-color: #1b1e26;
+  color:white;
+  border-radius: 1rem;
+}
